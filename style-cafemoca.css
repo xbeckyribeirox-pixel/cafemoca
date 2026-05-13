@@ -1,0 +1,123 @@
+.um {
+  background-color: #ffff9f; /* Classic yellow */
+  width: 200px;
+  min-height: 200px;
+  padding: 20px;
+  color: #f1cc25;
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.7);
+  transform: rotate(-4deg); /* Adds a realistic tilted look */
+  font-family: 'Sour Gummy', 'Comic Sans MS', cursive;
+}
+.dois {
+  background-color: #feb3ce; /* Classic yellow */
+  width: 200px;
+  min-height: 200px;
+  padding: 20px;
+  color: #dc7298;
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.7);
+  transform: rotate(3deg); /* Adds a realistic tilted look */
+  font-family: 'Sour Gummy', 'Comic Sans MS', cursive;
+}
+.tres {
+  background-color: #c6f0a1; /* Classic yellow */
+  width: 200px;
+  min-height: 200px;
+  padding: 20px;
+  color:#3da071;
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.7);
+  transform: rotate(-3deg); /* Adds a realistic tilted look */
+ font-family: 'Sour Gummy', 'Comic Sans MS', cursive;
+}
+.quatro {
+  background-color: #dbb0fa; /* Classic yellow */
+  width: 200px;
+  color: #7e4cbb;
+  min-height: 200px;
+  padding: 20px;
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.7);
+  transform: rotate(2deg); /* Adds a realistic tilted look */
+  font-family: 'Sour Gummy', 'Comic Sans MS', cursive;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f7f1e1;
+  gap: 20px;
+}
+
+.notes-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.note-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.audio-player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+
+.audio-player label,
+.audio-player select,
+.audio-player audio {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.audio-player select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+}
+
+.note-content {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+.homemade-apple-regular {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.homemade-apple-regular {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.sour-gummy-italic {
+  font-family: "Sour Gummy", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h1 {
+  font-family: 'Sour Gummy', 'Comic Sans MS', cursive;
+  color: #000000;
+}
+
+.subtitle {
+  font-family: 'Sour Gummy', 'Comic Sans MS', cursive;
+  color: #000000;
+  text-align: center;
+}

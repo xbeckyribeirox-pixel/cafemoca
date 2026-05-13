@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style-cafemoca.css">
+<title> Cafe Moca</title>
+</head>
+
+<body>
+    <h1>
+        Café Moca
+    </h1>
+    <h2 class="subtitle">
+        Um lugar para relaxar ou focar na sua tarefa enquanto ouve músicas
+    </h2>
+  <div class="notes-wrapper">
+    <div class="note-container">
+      <div class="um" contenteditable="true">
+        <h2>Título</h2>
+        <p>Escreva sua nota aqui...</p>
+      </div>
+    </div>
+    <div class="note-container">
+      <div class="dois" contenteditable="true">
+        <h2>Título</h2>
+        <p>Escreva sua nota aqui...</p>
+      </div>
+    </div>
+    <div class="note-container">
+      <div class="tres" contenteditable="true">
+        <h2>Título</h2>
+        <p>Escreva sua nota aqui...</p>
+      </div>
+    </div>
+    <div class="note-container">
+      <div class="quatro" contenteditable="true">
+        <h2>Título</h2>
+        <p>Escreva sua nota aqui...</p>
+      </div>
+    </div> 
+  </div>
+  <div class="audio-player">
+    <label for="trackSelect">Escolha uma vibe:</label>
+    <select id="trackSelect">
+      <option value="cafe.mp3">Divertida</option>
+      <option value="ambient.mp3">Relaxante</option>
+      <option value="jazz.mp3">Energética</option>
+    </select>
+    <audio id="mainAudio" controls preload="none" src="cafemoca.mp3">
+      Seu navegador não suporta áudio.
+    </audio>
+  </div>
+  <script>
+    const trackSelect = document.getElementById('trackSelect');
+    const mainAudio = document.getElementById('mainAudio');
+    trackSelect.addEventListener('change', () => {
+      mainAudio.src = trackSelect.value;
+      mainAudio.load();
+    });
+  </script>
+</body>
+
+
+
+</html>
